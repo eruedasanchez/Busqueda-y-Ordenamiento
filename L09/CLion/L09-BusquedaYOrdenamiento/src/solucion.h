@@ -5,10 +5,13 @@
 #include <iostream>
 #include <vector>
 #include "string"
+#include <string.h>
 
 using namespace std;
 
 void mostrarVector(string &s);
+void mostrarVectorString(vector<string> &vs);
+void mostrarVectorVectorString(vector<vector<string>> &vvs);
 
 /* Ejercicio 1 */
 
@@ -19,6 +22,8 @@ bool sonIguales(string &palabra1, string &palabra2);
 bool anagramas(string &palabra1, string &palabra2);
 
 /* Ejercicio 2 */
+
+vector<string> ordenarPorFrec(vector<string> &palabras);
 
 /* Ejercicio 3 */
 
@@ -32,6 +37,18 @@ void insertionSort(vector<int> &v);
 vector<int> concatenar(vector<int> &v1, vector<int> &v2);
 float medianaConcatenando(vector<int> &v1, vector<int> &v2);
 
+/* Ejercicio 3.b */
+
+vector<int> merge(vector<int> &v1, vector<int> &v2);
+float medianaMerge(vector<int> &v1, vector<int> &v2);
+
+/* Ejercicio 4.a */
+bool esMenorSegunOrdenNatural(string &palabra1, string &palabra2);
+
+/* Ejercicio 4.b */
+
+void intercambiarPalabras(vector<string> &vpalabra, int indice, int minimo);
+void natSorted(vector<string> &vs);
 
 
 
